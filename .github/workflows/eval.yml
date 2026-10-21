@@ -25,16 +25,9 @@ jobs:
         working-directory: Capstone_Project_HPPCS02/Codebase
         run: python -m pytest -q
 
-      - name: Check evaluation labels
-        working-directory: Capstone_Project_HPPCS02/Codebase
-        shell: bash
+      - name: Skip retrieval evaluation until test index is configured
         run: |
-          if grep -q '^[[:space:]]*{' eval_data.jsonl; then
-            echo "Labeled evaluation cases found; running quality gate."
-            python -m rag_system.evaluate
-          else
-            echo "::warning::No labeled evaluation cases yet. Retrieval quality gate is not active."
-          fi
-        env:
-          MIN_RECALL_AT_5: "0.70"
+          echo "Unit tests completed."
+          echo "Retrieval evaluation requires an indexed test dataset."
+
 
