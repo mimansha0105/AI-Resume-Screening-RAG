@@ -1,4 +1,6 @@
+
 name: RAG quality checks
+
 on:
   push:
   pull_request:
@@ -9,24 +11,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: pip
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements-rag.txt
+          pip install -r Capstone_Project_HPPCS02/Codebase/requirements-rag.txt
+
       - name: Run unit tests
-        run: pytest -q
+        working-directory: Capstone_Project_HPPCS02/Codebase
+        run: python -m pytest -q
+
       - name: Check evaluation labels
+        working-directory: Capstone_Project_HPPCS02/Codebase
         shell: bash
         run: |
           if grep -q '^[[:space:]]*{' eval_data.jsonl; then
             echo "Labeled evaluation cases found; running quality gate."
             python -m rag_system.evaluate
           else
-            echo "::warning::No human-labeled evaluation cases yet. Retrieval quality gate is not active."
+            echo "::warning::No labeled evaluation cases yet. Retrieval quality gate is not active."
           fi
         env:
           MIN_RECALL_AT_5: "0.70"
+
