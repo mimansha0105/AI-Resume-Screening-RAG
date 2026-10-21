@@ -2,7 +2,7 @@
 
 An AI-powered resume screening prototype that uses semantic retrieval to help identify resumes relevant to a job-related query. The project explores resume PDF ingestion, text chunking, embeddings, vector search with ChromaDB, a FastAPI interface, and retrieval evaluation.
 
-> **Project status:** Prototype for learning and demonstration. It does not make hiring decisions, and a language model for answer generation is not currently integrated.
+> **Project status:** Prototype for learning and demonstration. It does not make hiring decisions, and it does not currently integrate a language model for answer generation.
 
 ## Table of Contents
 
@@ -266,6 +266,29 @@ The project’s metric unit tests can be run with pytest. Test results may vary 
 ## Responsible Use
 
 Use only resumes you are authorized to process. Avoid committing personal candidate data, secrets, environment files, or local vector-store contents. Treat retrieved matches as decision-support evidence, not as automatic hiring decisions. A qualified human should review the original resume and job criteria before taking action.
+
+## Project Screenshots
+
+### 1. API Health Check
+![API health check](01-api-health-check.png)
+
+### 2. FastAPI Documentation
+![FastAPI documentation](02-api-documentation.png)
+
+### 3. Resume Screening Request
+![Resume screening request](03-api-screening-request.png)
+
+### 4. Successful Resume Screening Response
+![Resume screening success](04-api-screening-success.png)
+
+### 5. GitHub Actions Workflow
+![GitHub Actions workflow](05-github-actions-workflow.png)
+
+### 6. Retrieval Evaluation Results
+![Evaluation results](06-evaluation-results.png)
+
+### 7. Evaluation Dataset
+![Evaluation dataset](07-evaluation-dataset.png)
 
 ## Author
 
