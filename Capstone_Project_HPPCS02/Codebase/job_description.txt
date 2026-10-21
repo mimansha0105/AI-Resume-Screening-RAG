@@ -1,0 +1,21 @@
+Machine Learning Engineer
+
+Responsibilities:
+- Develop and deploy machine learning models in production environments
+- Implement data pipelines and preprocessing workflows for large datasets
+- Collaborate with data scientists and software engineers to integrate ML solutions
+- Optimize models for performance, scalability, and reliability
+
+Requirements:
+- 3+ years of professional experience in machine learning or data science
+- Strong proficiency in Python programming language
+- Experience with TensorFlow, PyTorch, or similar deep learning frameworks
+- Solid understanding of SQL and database management systems
+- Experience with cloud platforms (AWS, Azure, or Google Cloud Platform)
+- Bachelor's or Master's degree in Computer Science, AI, or related field
+
+Preferred Skills:
+- Experience with natural language processing (NLP) or computer vision
+- Knowledge of Docker, Kubernetes, and MLOps practices
+- Familiarity with big data technologies (Spark, Hadoop)
+- Publications in relevant conferences or open-source contributions

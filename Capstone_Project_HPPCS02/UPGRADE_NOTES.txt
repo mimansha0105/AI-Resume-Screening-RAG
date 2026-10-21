@@ -1,0 +1,3 @@
+RAG upgrade files are in Codebase/README_RAG_UPGRADE.md and Codebase/rag_system/.
+Original capstone files and resume PDFs have been preserved.
+Important: eval_data.jsonl is intentionally unlabeled. Add human-reviewed relevance labels before claiming measured metrics.

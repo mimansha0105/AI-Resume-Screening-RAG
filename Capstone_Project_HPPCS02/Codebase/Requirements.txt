@@ -1,0 +1,12 @@
+sentence-transformers==2.2.2
+scikit-learn==1.2.2
+numpy==1.24.3
+pandas==1.5.3
+PyPDF2==3.0.1
+python-docx==0.8.11
+nltk==3.8.1
+torch==2.0.1
+transformers==4.21.3
+tqdm==4.65.0
+regex==2023.6.3
+python>=3.7
